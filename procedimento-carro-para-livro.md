@@ -3,12 +3,12 @@
 
 ### 1. Modificações no Backend (index.js)
 
-1. Linha 13: Alterar 'alugaCarros' para 'biblioteca'
+1. Linha 13: Alterar 'alugaCarros' para 'TarefasKanban'
 
-2. Linhas 24, 39, 55, 71, 108, 146: Substituir '/carros' por '/livros'
+2. Linhas 24, 39, 55, 71, 108, 146: Substituir '/carros' por '/tarefas'
 
 3. Linhas 26, 41, 57, 73, 110: Atualizar as queries SQL:
-   - Substituir 'carros' por 'livros'
+   - Substituir 'carros' por 'tarefas'
    - Substituir 'modelo' por 'titulo'
    - Substituir 'cor' por 'autor'
    - Substituir 'km' por 'ano'

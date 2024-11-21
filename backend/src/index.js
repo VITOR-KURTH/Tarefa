@@ -6,8 +6,8 @@ const app = express();
 const pool = new Pool({
     user: 'postgres', // Substitua pelo seu usuário do PostgreSQL
     host: 'localhost',
-    database: 'alugaCarros', // Nome da sua database
-    password: 'postgre', // Substitua pela sua senha
+    database: 'TarefasKanban', // Nome da sua database
+    password: 'senai', // Substitua pela sua senha
     port: 5432, // Porta padrão do PostgreSQL
 });
 
@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rota para buscar todos os carros
-app.get('/carros', async (req, res) => {
+app.get('/tarefas', async (req, res) => {
     try {
         const result = await pool.query('SELECT * FROM carros');
         res.json(result.rows);
